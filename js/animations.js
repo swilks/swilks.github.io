@@ -3,8 +3,8 @@ var phoneSize = 480;
 
 $(document).ready(
 	function() {
-		tabSync()
-		resizeTabs();
+		// tabSync()
+		// resizeTabs();
 	
 		$('.logo_active').hover(
 			function() {
@@ -21,12 +21,9 @@ $(document).ready(
 				$(this).hide();
 				$(this).prev().show();
 			}
+
 		);
 
-		$(".dropdown-menu").children().click(function() {
-			url = $(this).find("a").attr('href');	
-			tabSync(url);
-		});
 	}
 )
 

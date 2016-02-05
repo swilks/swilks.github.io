@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -24,6 +25,15 @@
 
 	<!-- JS -->
 	<script src="js/animations.js"></script>
+  <script src="js/helpers.js"></script>
+
+
+  <script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+   });
+  </script>
+
 
 	<!-- Analytics -->
 	<script>
@@ -34,8 +44,7 @@
 
   ga('create', 'UA-41145761-2', 'auto');
   ga('send', 'pageview');
-
-</script>
+  </script>
 
 </head>
 
@@ -125,7 +134,7 @@
         <div class="resume-item" id="2014">
           <a href="http://gobridgit.com/"><img class="pull-right" style="width:30px; height=50px" src="https://bridgit-app.herokuapp.com//assets/frame/logo-0d0a2536d71e4ff0b9c6b3b8749d8d67.png" /></a>
           <hgroup>
-            <h1> Bridgit - Android Developer <h1>
+            <h1> Bridgit - Android Developer </h1>
             <h2> January - May 2014 (Part Time) | Waterloo, ON |Android </h2>
           </hgroup>
           <ul> 
@@ -139,6 +148,15 @@
             <li>Worked closely with the iOS and Web developers to ensure a consistent experience</li>
             <li>Had the opportunity to make a large impact on a small start-up</li>
           </ul>
+          <div class="evaluation">
+            <hr />
+            <p> Evaluation: Not Evaluated (<a href="#" data-toggle="tooltip" title="Bridgit wasn't a co-op placement, so they didn't need to give me a formal evaluation">Why?</a>)
+            <blockquote> <p>
+              Sam is an extremely hard worker and brought a positive energy to the team. He is always ready to take on new challenges and his flexibility allows him to work successfully with any team, and in many variations of a technical role. Sam is a strong communicator, especially when it involves cross-functional teams, and will be successful in any new opportunity he decides to take on.  
+              </p>
+              <small> Mallorie Brodie, Bridgit Co-Founder </small>
+            </blockquote>
+          </div> 
           <a href="#more-on-bridgit" data-toggle="collapse"> More on Bridgit </a>
           <div class="collapse" id="more-on-bridgit">
            <p> I started with an Android app that was largely unusable. Although many of the core features had been developed (primarily the main list view and networking) the majority of the app was not functional due to out-dated api calls, broken UI elements or crashes that hadn’t been fixed. I started by making the app’s main screen usable and refactoring to use fragments. I then worked iteratively to build new features, refactor old code and improve the UI and UX. I had to make sure the architecture was well implemented, the codebase remained clean and the app was consistent with the other platforms. Working independently, I had to hold myself to high standards. Given that the target users were largely not tech savvy I had to work hard to build the most intuitive UI I possibly could. By the end of my term the app was release ready</p> 
